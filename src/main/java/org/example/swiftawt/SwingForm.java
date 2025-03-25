@@ -27,7 +27,7 @@ public class SwingForm {
     private JButton save;
     private JButton clean;
 
-    public void SwingForm() {
+    public SwingForm() {
         save.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -93,7 +93,8 @@ public class SwingForm {
                 "Sucursal: " + sucursal;
 
         JFrame summaryFrame = new JFrame("Pedido al distribuidor " + distributor);
-        summaryFrame.setSize(400, 200);
+        summaryFrame.setSize(400, 300);
+        summaryFrame.setLocationRelativeTo(null);
         summaryFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         summaryFrame.setLayout(new GridLayout(4, 1));
 
@@ -104,6 +105,7 @@ public class SwingForm {
         cancelButton.addActionListener(e -> summaryFrame.dispose());
         confirmButton.addActionListener(e -> {
             System.out.println("Pedido enviado.");
+            JOptionPane.showMessageDialog(null, "Pedido enviado");
             summaryFrame.dispose();
         });
 

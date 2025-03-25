@@ -3,7 +3,7 @@
   <grid id="27dc6" binding="container" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="487"/>
+      <xy x="20" y="20" width="500" height="585"/>
     </constraints>
     <properties>
       <background color="-458755"/>
@@ -13,29 +13,20 @@
     <children>
       <grid id="185ad" binding="containerform" layout-manager="FormLayout">
         <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="center:10px:noGrow"/>
+        <rowspec value="top:d:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="center:21px:noGrow"/>
+        <rowspec value="center:42px:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="center:41px:noGrow"/>
+        <rowspec value="center:23px:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:17dlu:noGrow"/>
+        <rowspec value="center:8px:noGrow"/>
         <rowspec value="top:3dlu:noGrow"/>
         <rowspec value="center:max(d;4px):noGrow"/>
-        <rowspec value="top:3dlu:noGrow"/>
-        <rowspec value="center:max(d;4px):noGrow"/>
-        <rowspec value="top:3dlu:noGrow"/>
-        <rowspec value="center:d:grow"/>
-        <rowspec value="top:3dlu:noGrow"/>
-        <rowspec value="center:max(d;4px):noGrow"/>
-        <rowspec value="top:3dlu:noGrow"/>
-        <rowspec value="center:d:grow"/>
-        <rowspec value="top:3dlu:noGrow"/>
-        <rowspec value="center:max(d;4px):noGrow"/>
-        <rowspec value="top:3dlu:noGrow"/>
-        <rowspec value="center:max(d;4px):noGrow"/>
-        <rowspec value="top:3dlu:noGrow"/>
-        <rowspec value="center:d:grow"/>
-        <rowspec value="top:3dlu:noGrow"/>
-        <rowspec value="center:max(d;4px):noGrow"/>
-        <rowspec value="top:3dlu:noGrow"/>
-        <rowspec value="center:max(d;4px):noGrow"/>
-        <rowspec value="top:3dlu:noGrow"/>
-        <rowspec value="center:max(d;4px):noGrow"/>
-        <colspec value="fill:max(d;4px):noGrow"/>
+        <colspec value="fill:27px:noGrow"/>
         <colspec value="left:4dlu:noGrow"/>
         <colspec value="fill:d:grow"/>
         <colspec value="left:4dlu:noGrow"/>
@@ -52,96 +43,10 @@
           <title-color color="-2104859"/>
         </border>
         <children>
-          <component id="7c299" class="javax.swing.JLabel" binding="name_label">
-            <constraints>
-              <grid row="4" column="2" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-              <forms/>
-            </constraints>
-            <properties>
-              <foreground color="-14277079"/>
-              <labelFor value="507b5"/>
-              <text value="Nombre del Medicamento"/>
-            </properties>
-          </component>
-          <component id="507b5" class="javax.swing.JTextField" binding="input_name">
-            <constraints>
-              <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="-1"/>
-              </grid>
-              <forms defaultalign-horz="false"/>
-            </constraints>
-            <properties>
-              <background color="-458755"/>
-              <text value="Nombre"/>
-            </properties>
-          </component>
-          <component id="9958f" class="javax.swing.JLabel" binding="medication_label">
-            <constraints>
-              <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-              <forms/>
-            </constraints>
-            <properties>
-              <foreground color="-14277079"/>
-              <labelFor value="a6456"/>
-              <text value="Tipo de Medicación"/>
-            </properties>
-          </component>
-          <component id="a6456" class="javax.swing.JComboBox" binding="medication">
-            <constraints>
-              <grid row="14" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-              <forms/>
-            </constraints>
-            <properties>
-              <background color="-6316121"/>
-              <editable value="false"/>
-              <model>
-                <item value="Seleccione un tipo"/>
-                <item value="analgésico"/>
-                <item value="analéptico"/>
-                <item value="anestésico"/>
-                <item value="antiácido"/>
-              </model>
-            </properties>
-          </component>
-          <component id="3082a" class="javax.swing.JLabel" binding="amount_label">
-            <constraints>
-              <grid row="18" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-              <forms/>
-            </constraints>
-            <properties>
-              <foreground color="-14277079"/>
-              <labelFor value="80dba"/>
-              <text value="Cantidad"/>
-            </properties>
-          </component>
-          <component id="80dba" class="javax.swing.JTextField" binding="amount_input">
-            <constraints>
-              <grid row="20" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="-1"/>
-              </grid>
-              <forms defaultalign-horz="false"/>
-            </constraints>
-            <properties>
-              <background color="-458755"/>
-              <text value="2"/>
-            </properties>
-          </component>
-          <vspacer id="68920">
-            <constraints>
-              <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-              <forms defaultalign-vert="false"/>
-            </constraints>
-          </vspacer>
-          <vspacer id="c7b18">
-            <constraints>
-              <grid row="16" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-              <forms defaultalign-vert="false"/>
-            </constraints>
-          </vspacer>
           <grid id="6ad61" binding="grid_pharmacy" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <grid row="22" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="13" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
               <forms/>
             </constraints>
             <properties>
@@ -168,7 +73,9 @@
                   <grid id="4a822" binding="distributor_panel" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                     <margin top="0" left="0" bottom="0" right="0"/>
                     <constraints>
-                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="101" height="115"/>
+                      </grid>
                     </constraints>
                     <properties>
                       <background color="-458755"/>
@@ -194,7 +101,7 @@
                           <background color="-458755"/>
                           <borderPainted value="true"/>
                           <contentAreaFilled value="false"/>
-                          <focusTraversalPolicyProvider value="true"/>
+                          <focusTraversalPolicyProvider value="false"/>
                           <foreground color="-14277079"/>
                           <hideActionText value="true"/>
                           <text value="Cofarma"/>
@@ -225,7 +132,9 @@
                   <grid id="5da8a" binding="sucursal_panel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                     <margin top="0" left="0" bottom="0" right="0"/>
                     <constraints>
-                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="101" height="115"/>
+                      </grid>
                     </constraints>
                     <properties>
                       <background color="-458755"/>
@@ -240,7 +149,7 @@
                         <properties>
                           <background color="-458755"/>
                           <borderPaintedFlat value="true"/>
-                          <enabled value="false"/>
+                          <enabled value="true"/>
                           <focusable value="false"/>
                           <foreground color="-14277079"/>
                           <label value="Principal"/>
@@ -296,21 +205,15 @@
               </vspacer>
             </children>
           </grid>
-          <hspacer id="22eb1">
-            <constraints>
-              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-              <forms defaultalign-horz="false"/>
-            </constraints>
-          </hspacer>
           <vspacer id="f0684">
             <constraints>
-              <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+              <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
               <forms defaultalign-vert="false"/>
             </constraints>
           </vspacer>
           <vspacer id="af594">
             <constraints>
-              <grid row="8" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+              <grid row="11" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
               <forms defaultalign-vert="false"/>
             </constraints>
           </vspacer>
@@ -324,6 +227,85 @@
               <font name="Arial Black" size="18" style="1"/>
               <foreground color="-14277079"/>
               <text value="NUEVO PEDIDO"/>
+            </properties>
+          </component>
+          <hspacer id="eb660">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <forms defaultalign-horz="false"/>
+            </constraints>
+          </hspacer>
+          <component id="507b5" class="javax.swing.JTextField" binding="input_name">
+            <constraints>
+              <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+              <forms defaultalign-horz="false"/>
+            </constraints>
+            <properties>
+              <background color="-458755"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="9958f" class="javax.swing.JLabel" binding="medication_label">
+            <constraints>
+              <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <foreground color="-14277079"/>
+              <labelFor value="a6456"/>
+              <text value="Tipo de Medicación"/>
+            </properties>
+          </component>
+          <component id="a6456" class="javax.swing.JComboBox" binding="medication">
+            <constraints>
+              <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <background color="-6316121"/>
+              <editable value="false"/>
+              <model>
+                <item value="analgésico"/>
+                <item value="analéptico"/>
+                <item value="anestésico"/>
+                <item value="antiácido"/>
+              </model>
+            </properties>
+          </component>
+          <component id="3082a" class="javax.swing.JLabel" binding="amount_label">
+            <constraints>
+              <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <foreground color="-14277079"/>
+              <labelFor value="80dba"/>
+              <text value="Cantidad"/>
+            </properties>
+          </component>
+          <component id="80dba" class="javax.swing.JTextField" binding="amount_input">
+            <constraints>
+              <grid row="9" column="2" row-span="2" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+              <forms defaultalign-horz="false"/>
+            </constraints>
+            <properties>
+              <background color="-458755"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="7c299" class="javax.swing.JLabel" binding="name_label">
+            <constraints>
+              <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties>
+              <foreground color="-14277079"/>
+              <labelFor value="507b5"/>
+              <text value="Nombre del Medicamento"/>
             </properties>
           </component>
         </children>
